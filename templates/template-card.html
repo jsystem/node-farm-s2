@@ -1,0 +1,32 @@
+<figure class="card">
+    <!-- Add IMAGE     -->
+    <div class="card__emoji">{%IMAGE%} {%IMAGE%}</div>
+
+    <!-- Add Product Name -->
+    <div class="card__title-box">
+        <h2 class="card__title">{%PRODUCTNAME%}</h2>
+    </div>
+
+    <div class="card__details">
+        <!-- Add if Organic -->
+        <div class="card__detail-box {%NOT_ORGANIC%}">
+            <h6 class="card__detail card__detail--organic">Organic!</h6>
+        </div>
+
+
+        <!-- Add QUANTITY -->
+        <div class="card__detail-box">
+            <h6 class="card__detail">{%QUANTITY%} per 📦</h6>
+        </div>
+
+        <!-- Add PRICE -->
+        <div class="card__detail-box">
+            <h6 class="card__detail card__detail--price">{%PRICE%}€</h6>
+        </div>
+    </div>
+
+    <!-- Add url to product -->
+    <a class="card__link" href="/product?id={%ID%}">
+        <span>Detail <i class="emoji-right">👉</i></span>
+    </a>
+</figure>
